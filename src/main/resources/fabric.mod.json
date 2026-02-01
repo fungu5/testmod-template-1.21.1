@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "testmod",
+	"version": "${version}",
+	"name": "testMod",
+	"description": "This mod is for testing purposes. Going to try to add all fundamental Minecraft modding elements",
+	"authors": [
+		"fungu5"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/testmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"name.modid.TestMod"
+		],
+		"fabric-datagen": [
+			"name.modid.TestModDataGenerator"
+		],
+		"Client": [
+			"name.modid.TestModClientClass"
+		]
+	},
+	"mixins": [
+		"testmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
