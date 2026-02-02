@@ -1,5 +1,6 @@
 package name.modid;
 
+import name.modid.items.ModItemClass;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +12,6 @@ public class TestMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItemClass.registerModItems();
 	}
 }
