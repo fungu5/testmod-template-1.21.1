@@ -2,6 +2,7 @@ package name.modid;
 
 import name.modid.block.ModBlocks;
 import name.modid.items.ModItemClass;
+import name.modid.items.ModItemGroups;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -13,6 +14,8 @@ public class TestMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
+
 		ModItemClass.registerModItems();
 		ModBlocks.registerModBlocks();
 	}
