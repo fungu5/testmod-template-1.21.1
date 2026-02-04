@@ -18,13 +18,15 @@ public class ModItemGroups {
                         entries.add(ModItemClass.RAW_PINK_GARNET);
 
                     }).build());
+
     public static final ItemGroup PINK_GARNET_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(TestMod.MOD_ID, "pink_garnet_blocks"), FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.PINK_GARNET_BLOCK))
             .displayName(Text.translatable("itemgroup.testmod.pink_garnet_blocks"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.PINK_GARNET_BLOCK);
                         entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
+                        entries.add(ModBlocks.PINK_GARNET_ORE);
+                        entries.add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
                     }).build());
-
 
 
     public static void registerItemGroups() {
